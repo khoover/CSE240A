@@ -11,9 +11,9 @@
 //
 // TODO:Student Information
 //
-const char *studentName = "NAME";
+const char *studentName = "Kenneth Donald Hoover";
 const char *studentID   = "PID";
-const char *email       = "EMAIL";
+const char *email       = "khooveri@eng.ucsd.edu";
 
 //------------------------------------//
 //      Predictor Configuration       //
@@ -36,7 +36,13 @@ int verbose;
 //
 //TODO: Add your own Branch Predictor data structures here
 //
+typedef struct {
+  uint8_t *btb;
+  uint32_t history_bits;
+} gShareData_t;
 
+typedef struct {
+} tournamentData_t;
 
 //------------------------------------//
 //        Predictor Functions         //
